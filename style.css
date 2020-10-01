@@ -297,13 +297,6 @@ span.pricetag{
     grid-gap: 10px;
 }
 
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
 .item1 img{
     width: 369px;
     height: 378px;
