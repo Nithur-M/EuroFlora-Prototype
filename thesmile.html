@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top-bar">
+    <span class="top-logo"><img src="images/logo-small.png"></span>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact us</a></li>
+            <li><a href="theflorist.html"><i class="fa fa-snowflake-o"></i>The florist</a></li>
+            <li><a href="gallery.html"><i class="fa fa-camera"></i>Gallery</a></li>
+            <li><a href="order.html"><i class="fa fa-cogs"></i>How to order</a></li>
+            <li><a href="orderbyphone.html"><i class="fa fa-phone-square"></i>Order by phone</a></li>
+            <li><a href="chat.html"><i class="fa fa-comment"></i>Chat</a></li>
+        </ul>
+    </nav>
+        </div>
+        <div class="container">
+            <div class="grid-container-2">
+                    <div class="item1"><img src="images/the smile.jpg"></div>
+                    <div class="item2">
+                        <h3 class="flower-name">The Smile</h3>
+                        <p class="flower-description">Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                        for every occasion. Conveys joy.</p>
+                        <p class="small-info">Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                        arrangement.</p>
+                        <hr>
+                    </div>
+                    <div class="item3">
+                        <div class="form-group">
+                            <label for="date">Delivery date*</label>
+                            <input type="date" class="fbox name"id="date" name="delivery-date"><br>
+                        </div>
+                        <div class="form-group">
+                            <legend>Delivery time</legend>
+                            <input type="radio" id="time1" name="delivery-time">
+                            <label for="time1">Working Day-Free(9a.m - 9p.m)</label><br>
+                            <input type="radio" id="time2" name="delivery-time">
+                            <label for="time2">Sunday and Public Holidays 4.00 &euro;</label><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="fbox quantity"id="quantity" value="1" min="1"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <button id="sentence-button" type="button" class="btn-link" data-href="#" data-title:"Messages">Out of ideas? Choose a message!</button>
+                            <textarea id="message" class="fbox message" rows="4" maxlength="250"></textarea><br>
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <label for="sign">Signature</label>
+                            <input type="text" class="fbox sign" id="sign"><br>
+                        </div>
+                        <small id="sign-text" class="form-text">If the message is not signed, it will be delivered anonymously</small>
+
+                        <button id="continue" class="btn-primary">Continue</button>
+                        
+                    </div>
+                    <div class="item4">
+                        <legend>Price (delivery included)</legend>
+                        <hr>
+                        <div class="radio one">
+                        <label class="arrangement check-label arrangement-active"> <input type="radio" name="flower[price]" value="78.9" checked=""> Standard <span style="white-space:nowrap"><span itemprop="price" content="78.9">78.90</span> €</span> </label>
+                        <i class="fa fa-info-circle" style="font-size:26px; color: #6b2e14; display: inline-block;"></i>
+                        </div>
+
+                        <div class="radio two">
+                        <label class="arrangement check-label arrangement-active"> <input type="radio" name="flower[price]" value="98.9" checked=""> Deluxe <span style="white-space:nowrap"><span itemprop="price" content="78.9">98.90</span> €</span> </label>
+                        <i class="fa fa-info-circle" style="font-size:26px; color: #6b2e14; display: inline-block"></i>
+                        </div>
+
+                        <div class="radio three" style="margin-top: 10px">
+                        <label class="arrangement check-label arrangement-active"> <input type="radio" name="flower[price]" value="118.9" checked=""> Premium <span style="white-space:nowrap"><span itemprop="price" content="78.9">118.90</span> €</span> </label>
+                        <i class="fa fa-info-circle" style="font-size:26px; color: #6b2e14; display: inline-block"></i>
+                        </div>
+
+                        <span class="btn-primary" id="total-btn">Total:<output>82.90</output>€<span style="white-space: nowrap;">(delivery included)</span></span>
+                        <span class="summary">The Smile 78.90€</span>
+                    </div>
+            </div>
+        </div>
+</body>
+</html>
